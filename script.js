@@ -1,0 +1,42 @@
+let glow = document.getElementById('glow');
+let polBg = document.getElementById('polBg');
+let pol1 = document.getElementById('pol1');
+let pol2 = document.getElementById('pol2');
+let pol3 = document.getElementById('pol3');
+let pol4 = document.getElementById('pol4');
+let pol5 = document.getElementById('pol5');
+let pol6 = document.getElementById('pol6');
+let pol7 = document.getElementById('pol7');
+let pol8 = document.getElementById('pol8');
+let pol9 = document.getElementById('pol9');
+let pol10 = document.getElementById('pol10');
+let pol11 = document.getElementById('pol11');
+let text = document.getElementById('text');
+
+window.addEventListener('scroll', () => {
+    let value = window.scrollY;
+    
+    glow.style.opacity = value * 1;
+    polBg.style.top = value * 0 +'px';
+    pol1.style.top = value * -2.5 +'px';
+    text.style.top = value * 2.5 +'px';
+    pol1.style.left = value * 2.5 +'px';
+    pol2.style.top = value * -2.5 +'px';
+    pol2.style.left = value * -2.5 +'px';
+    pol3.style.top = value * -3.5 +'px';
+    pol4.style.top = value * -2.5 +'px';
+    pol4.style.left = value * -0.5 +'px';
+    pol5.style.top = value * -2.5 +'px';
+    pol5.style.left = value * 1.5 +'px';
+    pol6.style.top = value * -2.5 +'px';
+    pol6.style.left = value * -2.5 +'px';
+    pol7.style.top = value * -2.5 +'px';
+    pol7.style.left = value * 2.5 +'px';
+    pol8.style.top = value * -2.5 +'px';
+    pol8.style.left = value * 2.5 +'px';
+    pol9.style.top = value * -2.5 +'px';
+    pol9.style.left = value * 3.5 +'px';
+    pol10.style.top = value * -2.5 +'px';
+    pol10.style.left = value * -3.5 +'px';
+    pol11.style.top = value * -2.5 +'px';
+});

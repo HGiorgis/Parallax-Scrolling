@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #f9f9f9;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+    background: rgb(41, 41, 41);
+}
+.logo {
+    font-size: 2em;
+    color: #969696;
+    pointer-events: none;
+    margin-right: 270px;
+}
+.navigation a{
+    text-decoration: none;
+    color: #757575;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.navigation a:hover, .navigation a.active {
+    background: #e0e0e0;
+    color: rgb(43, 43, 43);
+}
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#glow {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    font-size: 5em;
+    padding: 100px;
+    top: 10%;
+    border-radius: 200px;
+    background: white;
+    box-shadow: 0 30px 40px rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.219);
+    animation: anim 5s infinite;
+    opacity: 0;
+    transition: 0.5s;
+}
+@keyframes anim{
+    0%{
+        box-shadow: 0 30px 40px rgb(255, 255, 255);
+    }
+    50%{
+        box-shadow: 0 30px 70px rgb(255, 255, 255);
+    }
+    100%{
+        box-shadow: 0 30px 40px rgb(255, 255, 255);
+    }
+}
+#glow h2{
+    position: relative;
+    align-items: center;
+    font-size: 35px;
+    top: 40%;
+    width: 100%;
+    left: -20%;
+    color: #303030;
+    text-shadow: none;
+}
+.parallax h2 {
+    font-size: 90px;
+    top: 35%;
+    position: relative;
+    text-shadow: 0 2px 5px rgba(20, 20, 20, 0.616);
+    color: rgb(255, 255, 255);
+}
+.parallax img {
+    margin-top: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.sec {
+    position: relative;
+    background: #303030;
+    padding: 100px;
+    color: #fff;
+}
+.sec h2{
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #969696;
+}
+.sec {
+    font-size: 1em;
+    font-weight: 300;
+}
+#leaf{
+    filter: grayscale(100%);
+}
+#unity{
+    width: 300px;
+    filter: contrast(0);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+#unreal{
+    width: 200px;
+    filter: contrast(0);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+#gdc{
+    width: 300px;
+    filter: contrast(0);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 50px;
+}
